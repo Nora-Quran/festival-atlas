@@ -41,7 +41,7 @@ h3 { font-size: 1.05rem; }
 .brand { display: flex; align-items: center; gap: 8px; font-weight: 700; color: var(--ink); font-size: 1.05rem; }
 .brand:hover { text-decoration: none; }
 .brand .logo { width: 28px; height: 28px; border-radius: 8px; background: var(--accent); color: var(--accent-ink); display: grid; place-items: center; font-size: 16px; }
-.fest-switch { min-width: 0; }
+.fest-switch { min-width: 0; width: auto !important; max-width: 220px; padding: 5px 8px !important; font-size: .88rem; }
 .nav { display: flex; gap: 2px; flex-wrap: wrap; flex: 1; }
 .nav a { color: var(--ink); padding: 6px 8px; border-radius: 8px; font-size: .88rem; white-space: nowrap; }
 .nav a:hover { background: var(--surface-2); text-decoration: none; }

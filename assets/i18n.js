@@ -73,6 +73,7 @@ window.I18N = {
     catalogSummary: "{p} published · {i} in progress · {l} planned",
     catalogIntro: "All festivals the project covers or plans to cover. New festivals cover the last 10 years (2017–2026).",
     statusPublished: "Published", statusInProgress: "In progress",
+    premiere: "Premiere", allPremieres: "Any premiere status",
   },
   fa: {
     siteName: "اطلس جشنواره‌ها",
@@ -145,6 +146,7 @@ window.I18N = {
     catalogSummary: "{p} منتشرشده · {i} در حال انجام · {l} در برنامه",
     catalogIntro: "همه جشنواره‌هایی که پروژه پوشش می‌دهد یا در برنامه دارد. جشنواره‌های جدید ۱۰ سال اخیر (۲۰۱۷ تا ۲۰۲۶) را پوشش می‌دهند.",
     statusPublished: "منتشرشده", statusInProgress: "در حال انجام",
+    premiere: "اولین نمایش", allPremieres: "هر وضعیت نمایش",
   },
 };
 
@@ -228,4 +230,7 @@ Object.assign(window.FA_TERMS, {
   "Experimental": "تجربی", "National Competition": "مسابقه ملی", "Industry Screenings": "نمایش‌های صنعت سینما", "Other": "سایر",
   "out of competition": "خارج از مسابقه", "special screening": "نمایش ویژه",
   "Competitive": "رقابتی", "Non-competitive": "غیررقابتی",
+  "World Premiere": "اولین نمایش جهانی", "International Premiere": "اولین نمایش بین‌المللی",
+  "European Premiere": "اولین نمایش اروپایی", "North American Premiere": "اولین نمایش آمریکای شمالی",
+  "Regional Premiere": "اولین نمایش منطقه‌ای", "National Premiere": "اولین نمایش ملی", "Not a premiere": "نمایش نخست نیست",
 });

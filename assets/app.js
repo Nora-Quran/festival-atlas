@@ -95,6 +95,7 @@
     F.countries = count(F.films.flatMap((f) => f.c));
     F.moods = count(F.films.flatMap((f) => f.mood));
     F.keywords = count(F.films.flatMap((f) => f.kw));
+    F.premieres = count(F.films.flatMap((f) => f.ap.map((a) => a.pr).filter(Boolean)));
     F.dirFilms = new Map();
     for (const f of F.films) {
       f.s = fold([f.t, f.ot, f.dn.join(" "), f.kw.join(" "), f.mt, f.st, f.c.join(" "), f.ap.map((a) => a.aw.join(" ")).join(" ")].join(" | "));
@@ -210,6 +211,7 @@
   }
   function apChips(F, aps) {
     return aps.map((a) => `<a class="chip" href="${link(F.meta.slug, "year", String(a.y), a.p)}">${num(a.y)} · ${esc(term(a.p))}</a>` +
+      (a.pr ? `<span class="chip ok" title="${esc(a.prb)}">🎬 ${esc(term(a.pr))}</span>` : "") +
       a.aw.map((w) => `<span class="chip award" title="${esc(w)}">🏆 ${bdi(w)}</span>`).join("")).join("");
   }
   function filmCard(F, f, aps = f.ap, showSyn = true) {
@@ -336,9 +338,10 @@
   }
 
   // Browse with facets
-  const FILTER_KEYS = ["q", "year", "prog", "cat", "country", "mood", "theme", "aw", "watch", "rmin", "rmax", "sort"];
+  const FILTER_KEYS = ["q", "year", "prog", "cat", "country", "mood", "theme", "prem", "aw", "watch", "rmin", "rmax", "sort"];
   function apMatch(a, p) {
-    return (!p.year || a.y === +p.year) && (!p.prog || a.p === p.prog) && (!p.cat || a.cat === p.cat) && (!p.aw || a.aw.length > 0);
+    return (!p.year || a.y === +p.year) && (!p.prog || a.p === p.prog) && (!p.cat || a.cat === p.cat) && (!p.aw || a.aw.length > 0)
+      && (!p.prem || a.pr === p.prem);
   }
   function filterFilms(F, p) {
     const terms = fold(p.q).split(/\s+/).filter(Boolean);
@@ -377,6 +380,7 @@
           <label class="field">${t("category")}<select name="cat">${opt("", t("allCategories"), p.cat)}${F.categories.map((x) => opt(x, term(x), p.cat)).join("")}</select></label>
           <label class="field">${t("country")}<select name="country">${opt("", t("allCountries"), p.country)}${F.countries.map(([c, n]) => opt(c, `${term(c)} (${num(n)})`, p.country)).join("")}</select></label>
           <label class="field">${t("mood")}<select name="mood">${opt("", t("allMoods"), p.mood)}${F.moods.slice(0, 80).map(([c, n]) => opt(c, `${c} (${num(n)})`, p.mood)).join("")}</select></label>
+          ${F.premieres.length ? `<label class="field">${t("premiere")}<select name="prem">${opt("", t("allPremieres"), p.prem)}${F.premieres.map(([c, n]) => opt(c, `${term(c)} (${num(n)})`, p.prem)).join("")}</select></label>` : ""}
           <label class="field">${t("anyTheme")}<input type="search" name="theme" value="${esc(p.theme)}" list="kw-list"></label>
           <datalist id="kw-list">${F.keywords.slice(0, 300).map(([k]) => `<option value="${esc(k)}">`).join("")}</datalist>
           <div class="row2"><label class="field">${t("minRuntime")}<input type="number" min="0" name="rmin" value="${esc(p.rmin)}"></label>
@@ -404,7 +408,7 @@
       history.replaceState(null, "", withParams(link(s, "films"), cur));
       state.lastPath = parseHash().parts.join("/");
       list = filterFilms(F, cur);
-      const hasApFilter = cur.year || cur.prog || cur.cat || cur.aw;
+      const hasApFilter = cur.year || cur.prog || cur.cat || cur.aw || cur.prem;
       $("#results").innerHTML = list.length ? list.slice(0, limit).map((f) => filmCard(F, f, hasApFilter ? f.ap.filter((a) => apMatch(a, cur)) : f.ap)).join("")
         : `<p class="card">${t("noResults")}</p>`;
       const msg = t("results", { n: fmt(list.length) });
@@ -454,9 +458,10 @@
             ${f.syn ? `<p class="content-en" lang="en" dir="ltr">${esc(f.syn)}</p>` : `<p class="muted">${t("noSynopsis")}</p>`}
             ${f.log ? `<p><strong>${t("logline")}:</strong> ${en(f.log)}</p>` : ""}
             <h2>${t("festivalHistory")}</h2>
-            <div class="table-wrap"><table><thead><tr><th>${t("year")}</th><th>${t("section")}</th><th>${t("award")}</th><th>${t("verification")}</th><th>${t("sources")}</th></tr></thead><tbody>
+            <div class="table-wrap"><table><thead><tr><th>${t("year")}</th><th>${t("section")}</th><th>${t("premiere")}</th><th>${t("award")}</th><th>${t("verification")}</th><th>${t("sources")}</th></tr></thead><tbody>
             ${f.ap.map((a) => `<tr><td><a href="${link(s, "year", String(a.y))}">${num(a.y)}</a><div class="small muted">${ordinal(a.ed)}</div></td>
               <td><a href="${link(s, "year", String(a.y), a.p)}">${esc(term(a.p))}</a><div class="small muted">${esc(term(a.cat))}</div><div class="small muted content-en">${esc(a.sel)}</div></td>
+              <td>${a.pr ? `${esc(term(a.pr))}<div class="small muted content-en">${esc(a.prb)}</div>` : `<span class="muted">${t("unknown")}</span>`}</td>
               <td>${a.aw.length ? a.aw.map((w) => `<div>🏆 ${bdi(w)}</div>`).join("") : `<span class="muted">—</span>`}</td>
               <td>${verChip(a)}</td>
               <td>${a.src ? `<a href="${esc(a.src)}" target="_blank" rel="noopener">${t("officialSource")}</a>` : `<span class="muted">${t("unknown")}</span>`}
