@@ -4,7 +4,7 @@
 window.I18N = {
   en: {
     siteName: "Festival Atlas",
-    tagline: "Official selections of major film festivals, 2010–2026, with sources and recommendations.",
+    tagline: "Official selections of film festivals, with sources and recommendations.",
     skip: "Skip to content",
     home: "Home", festivals: "Festivals", browse: "Films", directors: "Directors", awards: "Awards",
     discover: "Discover", stats: "Statistics", quality: "Data quality", data: "Data & method",
@@ -69,10 +69,14 @@ window.I18N = {
     stillPlanned: "Roadmap", roadmap: "See the 50-item roadmap",
     unknownValue: "Unknown",
     alsoAt: "Also selected at", allFestivals: "all festivals",
+    catalogTitle: "Festival catalogue", catalogOpen: "Open the full catalogue",
+    catalogSummary: "{p} published · {i} in progress · {l} planned",
+    catalogIntro: "All festivals the project covers or plans to cover. New festivals cover the last 10 years (2017–2026).",
+    statusPublished: "Published", statusInProgress: "In progress",
   },
   fa: {
     siteName: "اطلس جشنواره‌ها",
-    tagline: "بخش‌های رسمی جشنواره‌های بزرگ فیلم، ۲۰۱۰ تا ۲۰۲۶، همراه با منابع و پیشنهاد فیلم.",
+    tagline: "بخش‌های رسمی جشنواره‌های فیلم، همراه با منابع و پیشنهاد فیلم.",
     skip: "رفتن به محتوا",
     home: "خانه", festivals: "جشنواره‌ها", browse: "فیلم‌ها", directors: "کارگردانان", awards: "جوایز",
     discover: "کشف فیلم", stats: "آمار", quality: "کیفیت داده", data: "داده و روش",
@@ -137,6 +141,10 @@ window.I18N = {
     stillPlanned: "نقشه راه", roadmap: "نقشه راه ۵۰ بندی",
     unknownValue: "نامعلوم",
     alsoAt: "حضور در جشنواره‌های دیگر", allFestivals: "همه جشنواره‌ها",
+    catalogTitle: "فهرست جشنواره‌ها", catalogOpen: "دیدن فهرست کامل",
+    catalogSummary: "{p} منتشرشده · {i} در حال انجام · {l} در برنامه",
+    catalogIntro: "همه جشنواره‌هایی که پروژه پوشش می‌دهد یا در برنامه دارد. جشنواره‌های جدید ۱۰ سال اخیر (۲۰۱۷ تا ۲۰۲۶) را پوشش می‌دهند.",
+    statusPublished: "منتشرشده", statusInProgress: "در حال انجام",
   },
 };
 

@@ -1,0 +1,865 @@
+{
+ "festivals": [
+  {
+   "name": "Festival de Cannes",
+   "website": "https://www.festival-cannes.com",
+   "slug": "cannes",
+   "status": "published",
+   "note": "Added (not in the source list); years 2010-2026"
+  },
+  {
+   "name": "Venice International Film Festival",
+   "website": "https://www.labiennale.org/en/cinema",
+   "slug": "venice",
+   "status": "published",
+   "note": "Added (not in the source list); years 2010-2026"
+  },
+  {
+   "name": "Berlin International Film Festival",
+   "website": "https://www.berlinale.de",
+   "slug": "berlinale",
+   "status": "published",
+   "note": "Added (not in the source list); years 2010-2026"
+  },
+  {
+   "name": "Tallinn Black Nights Film Festival",
+   "website": "https://poff.ee/en/about/tallinn-black-nights-film-festival/",
+   "slug": "",
+   "status": "in_progress",
+   "note": ""
+  },
+  {
+   "name": "Tehran International Short Film Festival",
+   "website": "https://www.tisff.ir/",
+   "slug": "",
+   "status": "planned",
+   "note": ""
+  },
+  {
+   "name": "Tampere Film Festival",
+   "website": "https://tamperefilmfestival.fi/",
+   "slug": "",
+   "status": "planned",
+   "note": ""
+  },
+  {
+   "name": "New York Shorts International Film Festival",
+   "website": "https://www.nyshorts.net/",
+   "slug": "",
+   "status": "planned",
+   "note": ""
+  },
+  {
+   "name": "International Fantastic Film Festival of Catalonia",
+   "website": "https://sitgesfilmfestival.com/",
+   "slug": "",
+   "status": "planned",
+   "note": ""
+  },
+  {
+   "name": "Cairo International Film Festival",
+   "website": "https://www.ciff.org.eg/",
+   "slug": "",
+   "status": "planned",
+   "note": ""
+  },
+  {
+   "name": "Big Sky Documentary Film Festival",
+   "website": "https://www.bigskyfilmfest.org/",
+   "slug": "",
+   "status": "planned",
+   "note": ""
+  },
+  {
+   "name": "International Festival of Documentary and Short Film of Bilbao",
+   "website": "https://zinebi.eus/",
+   "slug": "",
+   "status": "planned",
+   "note": ""
+  },
+  {
+   "name": "Hamilton Film Festival",
+   "website": "https://hamiltonfilmfestival.com/",
+   "slug": "",
+   "status": "planned",
+   "note": ""
+  },
+  {
+   "name": "International Animated Film Festival of Espinho",
+   "website": "https://cinanima.pt/",
+   "slug": "",
+   "status": "planned",
+   "note": ""
+  },
+  {
+   "name": "Thomas Edison Film Festival",
+   "website": "https://teff.org/",
+   "slug": "",
+   "status": "planned",
+   "note": ""
+  },
+  {
+   "name": "Bucheon International Animation Festival",
+   "website": "https://www.biaf.or.kr/",
+   "slug": "",
+   "status": "planned",
+   "note": ""
+  },
+  {
+   "name": "FOCUS Wales Film Festival",
+   "website": "https://www.focuswales.com/",
+   "slug": "",
+   "status": "planned",
+   "note": ""
+  },
+  {
+   "name": "DOCVILLE, Documentary Film Festival Belgium",
+   "website": "https://www.docville.be/",
+   "slug": "",
+   "status": "planned",
+   "note": ""
+  },
+  {
+   "name": "Cinequest Film Festival",
+   "website": "https://cinequest.org/",
+   "slug": "",
+   "status": "planned",
+   "note": ""
+  },
+  {
+   "name": "Raindance Film Festival",
+   "website": "https://raindance.org/",
+   "slug": "",
+   "status": "planned",
+   "note": ""
+  },
+  {
+   "name": "Cork International Film Festival",
+   "website": "https://www.corkfilmfest.org/",
+   "slug": "",
+   "status": "planned",
+   "note": ""
+  },
+  {
+   "name": "Nashville Film Festival",
+   "website": "https://nashvillefilmfestival.org/",
+   "slug": "",
+   "status": "planned",
+   "note": ""
+  },
+  {
+   "name": "Austin Film Festival",
+   "website": "https://austinfilmfestival.com/",
+   "slug": "",
+   "status": "planned",
+   "note": ""
+  },
+  {
+   "name": "Leeds International Film Festival",
+   "website": "https://www.leedsfilm.com/",
+   "slug": "",
+   "status": "planned",
+   "note": ""
+  },
+  {
+   "name": "MONTREAL FESTIVAL DU NOUVEAU CINÉMA",
+   "website": "https://nouveaucinema.ca/",
+   "slug": "",
+   "status": "planned",
+   "note": ""
+  },
+  {
+   "name": "New Orleans Film Festival",
+   "website": "https://neworleansfilmsociety.org/",
+   "slug": "",
+   "status": "planned",
+   "note": ""
+  },
+  {
+   "name": "Warsaw International Film Festival",
+   "website": "https://wff.pl/",
+   "slug": "",
+   "status": "planned",
+   "note": ""
+  },
+  {
+   "name": "Tirana International Film Festival",
+   "website": "https://tiranafilmfest.com/",
+   "slug": "",
+   "status": "planned",
+   "note": ""
+  },
+  {
+   "name": "Chicago International Film Festival",
+   "website": "https://www.chicagofilmfestival.com/",
+   "slug": "",
+   "status": "planned",
+   "note": ""
+  },
+  {
+   "name": "AFI FEST",
+   "website": "https://www.afi.com/afifest/",
+   "slug": "",
+   "status": "planned",
+   "note": ""
+  },
+  {
+   "name": "LA Shorts International Film Festival",
+   "website": "https://www.lashortsfest.com/",
+   "slug": "",
+   "status": "planned",
+   "note": ""
+  },
+  {
+   "name": "Uppsala Short Film Festival",
+   "website": "https://www.shortfilmfestival.com/",
+   "slug": "",
+   "status": "planned",
+   "note": ""
+  },
+  {
+   "name": "St. Louis International Film Festival",
+   "website": "https://cinemastlouis.org/",
+   "slug": "",
+   "status": "planned",
+   "note": ""
+  },
+  {
+   "name": "Santa Fe International Film Festival",
+   "website": "https://santafe.film/",
+   "slug": "",
+   "status": "planned",
+   "note": ""
+  },
+  {
+   "name": "Woodstock Film Festival",
+   "website": "https://woodstockfilmfestival.org/",
+   "slug": "",
+   "status": "planned",
+   "note": ""
+  },
+  {
+   "name": "Urbanworld Film Festival",
+   "website": "https://urbanworld.org/",
+   "slug": "",
+   "status": "planned",
+   "note": ""
+  },
+  {
+   "name": "IN THE PALACE International Film Festival",
+   "website": "https://inthepalace.com/",
+   "slug": "",
+   "status": "planned",
+   "note": ""
+  },
+  {
+   "name": "New Hampshire Film Festival",
+   "website": "https://nhfilmfestival.com/",
+   "slug": "",
+   "status": "planned",
+   "note": ""
+  },
+  {
+   "name": "Clermont-Ferrand International Short Film Festival",
+   "website": "https://www.clermont-filmfest.org/",
+   "slug": "",
+   "status": "in_progress",
+   "note": ""
+  },
+  {
+   "name": "American Documentary And Animation Film Festival",
+   "website": "https://amdocfilmfest.com/",
+   "slug": "",
+   "status": "planned",
+   "note": ""
+  },
+  {
+   "name": "Kyiv International Short Film Festival",
+   "website": "https://kisff.org/",
+   "slug": "",
+   "status": "planned",
+   "note": ""
+  },
+  {
+   "name": "Busan International Short Film Festival",
+   "website": "https://www.bisff.org/",
+   "slug": "",
+   "status": "planned",
+   "note": ""
+  },
+  {
+   "name": "Vienna Shorts",
+   "website": "https://www.viennashorts.com/",
+   "slug": "",
+   "status": "planned",
+   "note": ""
+  },
+  {
+   "name": "Viennale",
+   "website": "https://www.viennale.at/",
+   "slug": "",
+   "status": "planned",
+   "note": ""
+  },
+  {
+   "name": "New York Film Festival",
+   "website": "https://www.filmlinc.org/nyff/",
+   "slug": "",
+   "status": "planned",
+   "note": ""
+  },
+  {
+   "name": "Short Shorts Film Festival",
+   "website": "https://www.shortshorts.org/",
+   "slug": "",
+   "status": "planned",
+   "note": ""
+  },
+  {
+   "name": "Kurzfilm Festival Hamburg",
+   "website": "https://festival.shortfilm.com/en",
+   "slug": "",
+   "status": "planned",
+   "note": ""
+  },
+  {
+   "name": "Flickerfest International Short Film Festival",
+   "website": "https://flickerfest.com.au/",
+   "slug": "",
+   "status": "planned",
+   "note": ""
+  },
+  {
+   "name": "São Paulo International Short Film Festival",
+   "website": "https://www.kinoforum.org/",
+   "slug": "",
+   "status": "planned",
+   "note": ""
+  },
+  {
+   "name": "interfilm Berlin",
+   "website": "https://www.interfilm.de/en/",
+   "slug": "",
+   "status": "planned",
+   "note": ""
+  },
+  {
+   "name": "Norwich Film Festival",
+   "website": "https://norwichfilmfestival.co.uk/",
+   "slug": "",
+   "status": "planned",
+   "note": ""
+  },
+  {
+   "name": "Aspen Shortsfest",
+   "website": "https://aspenfilm.org/",
+   "slug": "",
+   "status": "planned",
+   "note": ""
+  },
+  {
+   "name": "THE NORWEGIAN SHORT FILM FESTIVAL",
+   "website": "https://kortfilmfestivalen.no/",
+   "slug": "",
+   "status": "planned",
+   "note": ""
+  },
+  {
+   "name": "Yorkton Film Festival",
+   "website": "https://yorktonfilm.com/",
+   "slug": "",
+   "status": "planned",
+   "note": ""
+  },
+  {
+   "name": "Brussels Independent Film Festival",
+   "website": "https://brusselsindependentfilmfestival.com/",
+   "slug": "",
+   "status": "planned",
+   "note": ""
+  },
+  {
+   "name": "Montecatini International Short Film Festival",
+   "website": "https://www.filmvideomontecatini.it/",
+   "slug": "",
+   "status": "planned",
+   "note": ""
+  },
+  {
+   "name": "Cinéfest Sudbury International Film Festival",
+   "website": "https://cinefest.com/",
+   "slug": "",
+   "status": "planned",
+   "note": ""
+  },
+  {
+   "name": "LUCAS – International Festival",
+   "website": "https://lucas-filmfestival.de/",
+   "slug": "",
+   "status": "planned",
+   "note": ""
+  },
+  {
+   "name": "Sydney Film Festival",
+   "website": "https://www.sff.org.au/",
+   "slug": "",
+   "status": "planned",
+   "note": ""
+  },
+  {
+   "name": "European Film Festival",
+   "website": "",
+   "slug": "",
+   "status": "planned",
+   "note": "نیازمند مشخص شدن کشور/نام دقیق جشنواره"
+  },
+  {
+   "name": "Glasgow Short Film Festival",
+   "website": "https://glasgowshort.org/",
+   "slug": "",
+   "status": "planned",
+   "note": ""
+  },
+  {
+   "name": "Bolton International Film Festival",
+   "website": "https://boltonfilmfestival.com/",
+   "slug": "",
+   "status": "planned",
+   "note": ""
+  },
+  {
+   "name": "Cleveland International Film Festival",
+   "website": "https://www.clevelandfilm.org/",
+   "slug": "",
+   "status": "planned",
+   "note": ""
+  },
+  {
+   "name": "Friss Hús Budapest International Short Film Festival",
+   "website": "https://frisshusbudapest.com/",
+   "slug": "",
+   "status": "planned",
+   "note": ""
+  },
+  {
+   "name": "Torino Film Festival",
+   "website": "https://www.torinofilmfest.org/",
+   "slug": "",
+   "status": "planned",
+   "note": ""
+  },
+  {
+   "name": "Internationale Kurzfilmtage Oberhausen",
+   "website": "https://www.kurzfilmtage.de/de/",
+   "slug": "",
+   "status": "planned",
+   "note": ""
+  },
+  {
+   "name": "Show Me Shorts International Film Festival",
+   "website": "https://www.showmeshorts.co.nz/",
+   "slug": "",
+   "status": "planned",
+   "note": ""
+  },
+  {
+   "name": "Rio de Janeiro International Film Festival",
+   "website": "https://www.festivaldorio.com.br/",
+   "slug": "",
+   "status": "planned",
+   "note": ""
+  },
+  {
+   "name": "Beirut Shorts International Film Festival",
+   "website": "https://beirutshorts.com/",
+   "slug": "",
+   "status": "planned",
+   "note": ""
+  },
+  {
+   "name": "Santa Barbara International Film Festival",
+   "website": "https://sbiff.org/",
+   "slug": "",
+   "status": "planned",
+   "note": ""
+  },
+  {
+   "name": "San Francisco International Film Festival",
+   "website": "https://sffilm.org/",
+   "slug": "",
+   "status": "planned",
+   "note": ""
+  },
+  {
+   "name": "Florida Film Festival",
+   "website": "https://floridafilmfestival.com/",
+   "slug": "",
+   "status": "planned",
+   "note": ""
+  },
+  {
+   "name": "Alexandria short film festival",
+   "website": "https://alexandriashortfilmfestival.com/",
+   "slug": "",
+   "status": "planned",
+   "note": ""
+  },
+  {
+   "name": "Seattle International Film Festival",
+   "website": "https://www.siff.net/",
+   "slug": "",
+   "status": "planned",
+   "note": ""
+  },
+  {
+   "name": "deadCenter Film Festival",
+   "website": "https://deadcenterfilm.org/",
+   "slug": "",
+   "status": "planned",
+   "note": ""
+  },
+  {
+   "name": "Curtas Vila do Conde – International Film Festival",
+   "website": "https://www.curtas.pt/",
+   "slug": "",
+   "status": "planned",
+   "note": ""
+  },
+  {
+   "name": "FLICKERS' RHODE ISLAND INTERNATIONAL FILM FESTIVAL",
+   "website": "https://www.film-festival.org/",
+   "slug": "",
+   "status": "planned",
+   "note": ""
+  },
+  {
+   "name": "Fribourg International Film Festival",
+   "website": "https://www.fiff.ch/",
+   "slug": "",
+   "status": "planned",
+   "note": ""
+  },
+  {
+   "name": "International Short Film Week Regensburg",
+   "website": "https://www.kurzfilmwoche.de/",
+   "slug": "",
+   "status": "planned",
+   "note": ""
+  },
+  {
+   "name": "IndieLisboa International Film Festival",
+   "website": "https://indielisboa.com/",
+   "slug": "",
+   "status": "planned",
+   "note": ""
+  },
+  {
+   "name": "FILMFEST DRESDEN - International Short Film Festival",
+   "website": "https://www.filmfest-dresden.de/",
+   "slug": "",
+   "status": "planned",
+   "note": ""
+  },
+  {
+   "name": "Prague Film Festival",
+   "website": "https://praguefilmfestival.com/",
+   "slug": "",
+   "status": "planned",
+   "note": ""
+  },
+  {
+   "name": "Brussels Short Film Festival",
+   "website": "https://bsff.be/",
+   "slug": "",
+   "status": "planned",
+   "note": ""
+  },
+  {
+   "name": "Festival International du Film de Nancy",
+   "website": "https://www.festivaldufilmnancy.com/",
+   "slug": "",
+   "status": "planned",
+   "note": ""
+  },
+  {
+   "name": "Annacy animation festival",
+   "website": "https://www.annecy.org/",
+   "slug": "",
+   "status": "in_progress",
+   "note": ""
+  },
+  {
+   "name": "Mecal Barcelona International Short and Animation Film Festival",
+   "website": "https://mecal.org/",
+   "slug": "",
+   "status": "planned",
+   "note": ""
+  },
+  {
+   "name": "Stuttgarter Filmwinter",
+   "website": "https://filmwinter.de/",
+   "slug": "",
+   "status": "planned",
+   "note": ""
+  },
+  {
+   "name": "Sehsüchte International Student Film Festival",
+   "website": "https://www.seh-suechte.de/",
+   "slug": "",
+   "status": "planned",
+   "note": ""
+  },
+  {
+   "name": "Kurzfilmfestival Köln",
+   "website": "https://kurzfilmfestival.de/",
+   "slug": "",
+   "status": "planned",
+   "note": ""
+  },
+  {
+   "name": "Hof International Film Festival",
+   "website": "https://www.hof-filmtage.com/",
+   "slug": "",
+   "status": "planned",
+   "note": ""
+  },
+  {
+   "name": "Palm Springs International ShortFest",
+   "website": "https://www.psfilmfest.org/",
+   "slug": "",
+   "status": "planned",
+   "note": "URL corrected (row shifted in the source list)"
+  },
+  {
+   "name": "Krakow Film Festival",
+   "website": "https://www.krakowfilmfestival.pl/",
+   "slug": "",
+   "status": "planned",
+   "note": "URL corrected (row shifted in the source list)"
+  },
+  {
+   "name": "Go Short – International Short Film Festival Nijmegen",
+   "website": "https://www.goshort.nl/",
+   "slug": "",
+   "status": "planned",
+   "note": "URL corrected (row shifted in the source list)"
+  },
+  {
+   "name": "Internationale Kurzfilmtage Winterthur",
+   "website": "https://www.kurzfilmtage.ch/",
+   "slug": "",
+   "status": "planned",
+   "note": "URL completed (row shifted in the source list)"
+  },
+  {
+   "name": "Leuven International Short Film Festival",
+   "website": "",
+   "slug": "",
+   "status": "planned",
+   "note": "Website not given in the source list"
+  },
+  {
+   "name": "Brest European Short Film Festival",
+   "website": "",
+   "slug": "",
+   "status": "planned",
+   "note": "Website not given in the source list"
+  },
+  {
+   "name": "Alcine – Alcalá de Henares Film Festival",
+   "website": "",
+   "slug": "",
+   "status": "planned",
+   "note": "Website not given in the source list"
+  },
+  {
+   "name": "Ann Arbor Film Festival",
+   "website": "",
+   "slug": "",
+   "status": "planned",
+   "note": "Website not given in the source list"
+  },
+  {
+   "name": "Atlanta Film Festival",
+   "website": "",
+   "slug": "",
+   "status": "planned",
+   "note": "Website not given in the source list"
+  },
+  {
+   "name": "Athens International Film + Video Festival",
+   "website": "",
+   "slug": "",
+   "status": "planned",
+   "note": "Website not given in the source list"
+  },
+  {
+   "name": "FEST Anča International Animation Festival",
+   "website": "",
+   "slug": "",
+   "status": "planned",
+   "note": "Website not given in the source list"
+  },
+  {
+   "name": "Animafest Zagreb",
+   "website": "",
+   "slug": "",
+   "status": "planned",
+   "note": "Website not given in the source list"
+  },
+  {
+   "name": "Fantoche International Animation Film Festival",
+   "website": "",
+   "slug": "",
+   "status": "planned",
+   "note": "Website not given in the source list"
+  },
+  {
+   "name": "Ottawa International Animation Festival",
+   "website": "",
+   "slug": "",
+   "status": "planned",
+   "note": "Website not given in the source list"
+  },
+  {
+   "name": "Kaboom Animation Festival",
+   "website": "",
+   "slug": "",
+   "status": "planned",
+   "note": "Website not given in the source list"
+  },
+  {
+   "name": "Stuttgart International Festival of Animated Film",
+   "website": "",
+   "slug": "",
+   "status": "planned",
+   "note": "Website not given in the source list"
+  },
+  {
+   "name": "Tribeca Festival",
+   "website": "",
+   "slug": "",
+   "status": "in_progress",
+   "note": "Website not given in the source list"
+  },
+  {
+   "name": "San Sebastián International Film Festival",
+   "website": "https://sansebastianfestival.com",
+   "slug": "",
+   "status": "in_progress",
+   "note": ""
+  },
+  {
+   "name": "Karlovy Vary International Film Festival",
+   "website": "https://kviff.com",
+   "slug": "",
+   "status": "in_progress",
+   "note": ""
+  },
+  {
+   "name": "Sarajevo Film Festival",
+   "website": "https://sff.ba",
+   "slug": "",
+   "status": "planned",
+   "note": ""
+  },
+  {
+   "name": "BFI London Film Festival",
+   "website": "https://bfi.org.uk/london-film-festival",
+   "slug": "",
+   "status": "in_progress",
+   "note": ""
+  },
+  {
+   "name": "SXSW Film & TV Festival",
+   "website": "https://sxsw.com",
+   "slug": "",
+   "status": "planned",
+   "note": ""
+  },
+  {
+   "name": "Edinburgh International Film Festival",
+   "website": "https://edfilmfest.org.uk",
+   "slug": "",
+   "status": "planned",
+   "note": ""
+  },
+  {
+   "name": "Fantastic Fest",
+   "website": "https://fantasticfest.com",
+   "slug": "",
+   "status": "planned",
+   "note": ""
+  },
+  {
+   "name": "IDFA – International Documentary Film Festival Amsterdam",
+   "website": "https://idfa.nl",
+   "slug": "",
+   "status": "in_progress",
+   "note": ""
+  },
+  {
+   "name": "Hot Docs Canadian International Documentary Festival",
+   "website": "https://hotdocs.ca",
+   "slug": "",
+   "status": "planned",
+   "note": ""
+  },
+  {
+   "name": "Sheffield DocFest",
+   "website": "https://sheffdocfest.com",
+   "slug": "",
+   "status": "planned",
+   "note": ""
+  },
+  {
+   "name": "Visions du Réel",
+   "website": "https://visionsdureel.ch",
+   "slug": "",
+   "status": "planned",
+   "note": ""
+  },
+  {
+   "name": "DOK Leipzig",
+   "website": "https://dok-leipzig.de",
+   "slug": "",
+   "status": "planned",
+   "note": ""
+  },
+  {
+   "name": "CPH:DOX",
+   "website": "https://cphdox.dk",
+   "slug": "",
+   "status": "planned",
+   "note": ""
+  },
+  {
+   "name": "FIDMarseille",
+   "website": "https://fidmarseille.org",
+   "slug": "",
+   "status": "planned",
+   "note": ""
+  },
+  {
+   "name": "Dokufest",
+   "website": "https://dokufest.com",
+   "slug": "",
+   "status": "planned",
+   "note": ""
+  },
+  {
+   "name": "Animayo",
+   "website": "https://animayo.com",
+   "slug": "",
+   "status": "planned",
+   "note": ""
+  },
+  {
+   "name": "Tricky Women Tricky Realities",
+   "website": "https://trickywomen.at",
+   "slug": "",
+   "status": "planned",
+   "note": ""
+  }
+ ]
+}

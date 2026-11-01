@@ -70,6 +70,11 @@
     state.manifest = await r.json();
     return state.manifest;
   }
+  async function loadCatalog() {
+    if (state.catalog !== undefined) return state.catalog;
+    try { const r = await fetch("data/catalog.json"); state.catalog = r.ok ? await r.json() : null; } catch (e) { state.catalog = null; }
+    return state.catalog;
+  }
   async function loadFest(slug) {
     if (state.fests[slug]) return state.fests[slug];
     const m = await loadManifest();
@@ -129,7 +134,8 @@
     let out;
     try {
       const m = await loadManifest();
-      if (!parts.length) out = viewHome(m);
+      if (!parts.length) out = viewHome(m, await loadCatalog());
+      else if (parts[0] === "catalog") out = viewCatalog(await loadCatalog());
       else if (parts[0] === "watchlist") out = await viewWatchlist(m);
       else if (parts[0] === "about") out = viewAbout(m);
       else if (parts[0] === "roadmap") out = await viewRoadmap();
@@ -256,8 +262,9 @@
     ["Sundance Film Festival", "festival.sundance.org"], ["Toronto International Film Festival", "tiff.net"],
     ["Locarno Film Festival", "locarnofestival.ch"], ["International Film Festival Rotterdam", "iffr.com"],
   ];
-  function viewHome(m) {
+  function viewHome(m, cat) {
     const fests = m.festivals;
+    const cnt = {}; (cat ? cat.festivals : []).forEach((f) => (cnt[f.status] = (cnt[f.status] || 0) + 1));
     const tot = fests.reduce((a, f) => ({ films: a.films + f.films, dirs: a.dirs + f.directors, ap: a.ap + f.appearances }), { films: 0, dirs: 0, ap: 0 });
     const slug = currentSlug();
     return {
@@ -278,9 +285,10 @@
           <div class="chips"><span class="chip ok">${t("programsComplete", { a: num(f.complete), b: num(f.programs) })}</span>
           <span class="chip">${fmt(f.analysed)} ${t("analysed")}</span></div>
           <p style="margin:12px 0 0"><a class="btn primary" href="${link(f.slug)}">${t("openFestival")}</a></p></article>`).join("")}
-          ${PLANNED.filter(([n]) => !fests.some((f) => f.name === n)).map(([n, site]) => `<article class="card fest-card planned"><h3>${esc(term(n))}</h3>
-          <p class="muted small">${esc(site)}</p><span class="chip">${t("planned")}</span></article>`).join("")}
         </div>
+        ${cat ? `<section class="card" style="margin-top:14px"><h3>${t("catalogTitle")}</h3>
+          <p class="muted">${t("catalogSummary", { p: num(cnt.published || 0), i: num(cnt.in_progress || 0), l: num(cnt.planned || 0) })}</p>
+          <a class="btn primary" href="#/catalog">${t("catalogOpen")} (${num(cat.festivals.length)})</a></section>` : ""}
         <p class="muted small" style="margin-top:10px">${t("plannedNote")} <a href="#/roadmap">${t("roadmap")}</a></p>`,
       after() {
         $("#home-search").onsubmit = (e) => { e.preventDefault(); location.hash = withParams("#/search", { q: $("#hq").value.trim() }); };
@@ -707,6 +715,33 @@
         <div class="grid cols-2">${m.festivals.map((f) => `<section class="card"><h3>${esc(term(f.name))}</h3><p class="muted small">${num(f.start)}–${num(f.end)}</p>
           <a class="btn" href="${link(f.slug, "data")}">${t("data")}</a> <a class="btn" href="${link(f.slug, "quality")}">${t("quality")}</a></section>`).join("")}</div>
         <h2>${t("stillPlanned")}</h2><p><a href="#/roadmap">${t("roadmap")}</a></p>`,
+    };
+  }
+
+  function viewCatalog(cat) {
+    if (!cat) return { html: `<p>${t("notFound")}</p>` };
+    const label = { published: t("statusPublished"), in_progress: t("statusInProgress"), planned: t("planned") };
+    const cls = { published: "ok", in_progress: "warn", planned: "" };
+    return {
+      title: t("catalogTitle"),
+      html: `<h1>${t("catalogTitle")}</h1><p class="muted">${t("catalogIntro")}</p>
+        <div class="results-bar"><input id="cq" type="search" style="max-width:380px" placeholder="${esc(t("search"))}…" aria-label="${esc(t("search"))}">
+        <span class="chips">${["", "published", "in_progress", "planned"].map((k) => `<button class="chip" type="button" data-st="${k}" aria-pressed="${k === ""}">${k ? label[k] : t("allFestivals")}</button>`).join("")}</span></div>
+        <div class="table-wrap"><table><thead><tr><th>${t("festivals")}</th><th>${t("status")}</th><th>${t("source")}</th></tr></thead><tbody id="cbody"></tbody></table></div>`,
+      after() {
+        let st = "";
+        const draw = () => {
+          const q = fold($("#cq").value);
+          const list = cat.festivals.filter((f) => (!st || f.status === st) && (!q || fold(f.name).includes(q)));
+          $("#cbody").innerHTML = list.map((f) => `<tr><td>${f.slug ? `<a href="${link(f.slug)}">${bdi(term(f.name))}</a>` : bdi(term(f.name))}${f.note ? `<div class="small muted">${bdi(f.note)}</div>` : ""}</td>
+            <td><span class="chip ${cls[f.status]}">${label[f.status]}</span></td>
+            <td>${f.website ? `<a class="ltr small" href="${esc(f.website)}" target="_blank" rel="noopener">${esc(f.website.replace(/^https?:\/\/(www\.)?/, "").replace(/\/$/, ""))}</a>` : "—"}</td></tr>`).join("");
+          announce(`${fmt(list.length)} ${t("festivals")}`);
+        };
+        $("#cq").oninput = draw;
+        $$("[data-st]").forEach((b) => b.onclick = () => { st = b.dataset.st; $$("[data-st]").forEach((x) => x.setAttribute("aria-pressed", x === b)); draw(); });
+        draw();
+      },
     };
   }
 
