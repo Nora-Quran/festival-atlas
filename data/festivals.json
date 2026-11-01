@@ -14,6 +14,36 @@
    "analysed": 2101,
    "complete": 145,
    "file": "data/cannes.json"
+  },
+  {
+   "slug": "venice",
+   "name": "Venice International Film Festival",
+   "website": "https://www.labiennale.org/en/cinema",
+   "start": 2010,
+   "end": 2026,
+   "films": 2863,
+   "appearances": 2875,
+   "directors": 2341,
+   "programs": 263,
+   "awards": 294,
+   "analysed": 2607,
+   "complete": 257,
+   "file": "data/venice.json"
+  },
+  {
+   "slug": "berlinale",
+   "name": "Berlin International Film Festival",
+   "website": "https://www.berlinale.de",
+   "start": 2010,
+   "end": 2026,
+   "films": 5710,
+   "appearances": 5779,
+   "directors": 4882,
+   "programs": 310,
+   "awards": 501,
+   "analysed": 5674,
+   "complete": 308,
+   "file": "data/berlinale.json"
   }
  ]
 }

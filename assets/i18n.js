@@ -68,6 +68,7 @@ window.I18N = {
     loading: "Loading…", notFound: "Not found.",
     stillPlanned: "Roadmap", roadmap: "See the 50-item roadmap",
     unknownValue: "Unknown",
+    alsoAt: "Also selected at", allFestivals: "all festivals",
   },
   fa: {
     siteName: "اطلس جشنواره‌ها",
@@ -135,6 +136,7 @@ window.I18N = {
     loading: "در حال بارگذاری…", notFound: "پیدا نشد.",
     stillPlanned: "نقشه راه", roadmap: "نقشه راه ۵۰ بندی",
     unknownValue: "نامعلوم",
+    alsoAt: "حضور در جشنواره‌های دیگر", allFestivals: "همه جشنواره‌ها",
   },
 };
 
@@ -188,3 +190,34 @@ window.FA_TERMS = {
   "Somalia": "سومالی", "Nigeria": "نیجریه", "Iraq": "عراق", "Rwanda": "رواندا", "Gabon": "گابن",
   "Central African Republic": "جمهوری آفریقای مرکزی", "Burkina Faso": "بورکینافاسو",
 };
+
+Object.assign(window.FA_TERMS, {
+  "Venice International Film Festival": "جشنواره بین‌المللی فیلم ونیز",
+  "Venezia Competition": "مسابقه اصلی ونیز", "In Competition": "مسابقه اصلی", "Orizzonti": "افق‌ها (اوریتزونتی)",
+  "Orizzonti Extra": "افق‌ها اکسترا", "Orizzonti Short Films": "فیلم‌های کوتاه افق‌ها", "Venice Classics": "کلاسیک‌های ونیز",
+  "Restored Films": "فیلم‌های مرمت‌شده", "Venice Immersive": "ونیز فراگیر (واقعیت مجازی)", "Venice VR Expanded": "واقعیت مجازی گسترده ونیز",
+  "Venice Virtual Reality": "واقعیت مجازی ونیز", "Best of": "برگزیده‌ها", "Best of Worlds": "برگزیده جهان‌ها", "Worlds Gallery": "گالری جهان‌ها",
+  "Special Events": "رویدادهای ویژه", "Events": "رویدادها", "Special Event": "رویداد ویژه", "Fiction": "داستانی", "Non Fiction": "غیرداستانی",
+  "Series": "سریال‌ها", "Short Films": "فیلم‌های کوتاه", "Special Screening": "نمایش ویژه", "Cinema & Music": "سینما و موسیقی",
+  "Film on Films": "فیلم درباره سینما", "Biennale College Cinema": "کالج سینمای بینال", "Biennale College Cinema Immersive": "کالج سینمای فراگیر بینال",
+  "Biennale College Cinema VR": "کالج سینمای واقعیت مجازی بینال", "Sconfini": "بی‌مرزها (اسکونفینی)", "Controcampo Italiano": "کنتروکامپو (سینمای ایتالیا)",
+  "Final Cut in Venice": "فاینال کات در ونیز", "Venice Spotlight": "ونیز اسپات‌لایت", "Pre-opening Night": "شب پیش از افتتاحیه",
+  "Cinema nel Giardino": "سینما در باغ", "Golden Lion for Lifetime Achievement": "شیر طلایی یک عمر دستاورد هنری",
+  "Jaeger-LeCoultre Glory to the Filmmaker Award": "جایزه افتخار فیلمساز (یگر-لکولتر)", "Persol Award": "جایزه پرسول", "Persol 3-D Award": "جایزه سه‌بعدی پرسول",
+  "Future Reloaded (Venezia 70)": "آینده از نو (ونیز ۷۰)", "Documentaries": "مستندها",
+  "Encounters": "مواجهه‌ها (انکانترز)", "Berlinale Special": "برلیناله ویژه", "Berlinale Special Gala": "گالای برلیناله ویژه",
+  "Berlinale Special Midnight": "برلیناله ویژه نیمه‌شب", "Berlinale Special Series": "سریال‌های برلیناله ویژه", "Berlinale Special Presentation": "نمایش ویژه برلیناله",
+  "Berlinale Special Talk": "گفتگوی برلیناله ویژه", "Berlinale Special Tribute": "بزرگداشت برلیناله ویژه", "Berlinale Camera": "دوربین برلیناله",
+  "Honorary Golden Bear": "خرس طلایی افتخاری", "Panorama": "پانوراما", "Panorama Dokumente": "پانوراما مستند", "Panorama Special": "پانوراما ویژه",
+  "Forum": "فوروم", "Forum Expanded": "فوروم گسترده", "Forum Special": "فوروم ویژه", "Forum Expanded Exhibition": "نمایشگاه فوروم گسترده",
+  "Forum Expanded Anniversary": "سالگرد فوروم گسترده", "Generation": "نسل (جنریشن)", "Generation Kplus": "نسل کودک (Kplus)",
+  "Generation 14plus": "نسل نوجوان (14plus)", "Generation 14plus Special Screening": "نمایش ویژه نسل نوجوان", "Generation Special Screening": "نمایش ویژه نسل",
+  "Berlinale Shorts": "فیلم‌های کوتاه برلیناله", "Berlinale Shorts Special Programme": "برنامه ویژه فیلم کوتاه برلیناله",
+  "Perspektive Deutsches Kino": "چشم‌انداز سینمای آلمان", "Guest of Perspektive Deutsches Kino": "مهمان چشم‌انداز سینمای آلمان", "Perspektive Match": "چشم‌انداز ماچ",
+  "Perspectives": "چشم‌اندازها", "Berlinale Classics": "کلاسیک‌های برلیناله", "Berlinale Classics Special": "کلاسیک‌های ویژه برلیناله", "Homage": "بزرگداشت",
+  "Culinary Cinema": "سینمای آشپزی", "NATIVe - Indigenous Cinema": "نیتیو – سینمای بومیان", "Berlinale Series": "سریال‌های برلیناله",
+  "Berlinale Talents": "استعدادهای برلیناله", "Special Screening Berlinale Goes Kiez": "نمایش ویژه برلیناله در محله‌ها",
+  "Experimental": "تجربی", "National Competition": "مسابقه ملی", "Industry Screenings": "نمایش‌های صنعت سینما", "Other": "سایر",
+  "out of competition": "خارج از مسابقه", "special screening": "نمایش ویژه",
+  "Competitive": "رقابتی", "Non-competitive": "غیررقابتی",
+});

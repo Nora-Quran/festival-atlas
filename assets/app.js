@@ -27,7 +27,19 @@
   const FA_DIGITS = "۰۱۲۳۴۵۶۷۸۹";
   const num = (n) => state.lang === "fa" ? String(n).replace(/\d/g, (d) => FA_DIGITS[d]) : String(n);
   const fmt = (n) => { const x = Number(n).toLocaleString("en-US"); return state.lang === "fa" ? num(x).replace(/,/g, "٬") : x; };
-  const term = (v) => (state.lang === "fa" && FA_TERMS[v]) ? FA_TERMS[v] : v;
+  // Persian name for a controlled value; compound names ("Out of Competition - Fiction",
+  // "Generation 14plus (out of competition)", "Non-competitive (series)") are translated part by part.
+  const term = (v) => {
+    if (state.lang !== "fa" || v == null) return v;
+    if (FA_TERMS[v]) return FA_TERMS[v];
+    const m = String(v).match(/^(.*?)\s*\(([^()]*)\)$/);
+    if (m && (FA_TERMS[m[1]] || FA_TERMS[m[2]])) return `${term(m[1])} (${FA_TERMS[m[2]] || m[2]})`;
+    if (String(v).includes(" - ")) {
+      const parts = String(v).split(" - ");
+      if (parts.some((p) => FA_TERMS[p] || FA_TERMS[p.replace(/\s*\(.*\)$/, "")])) return parts.map(term).join(" – ");
+    }
+    return v;
+  };
   const fold = (s) => String(s || "").normalize("NFD").replace(/[̀-ͯ]/g, "").toLowerCase();
   const en = (s, tag = "span") => `<${tag} class="content-en" lang="en" dir="ltr">${esc(s)}</${tag}>`;
   const bdi = (s) => `<bdi>${esc(s)}</bdi>`;
@@ -121,6 +133,7 @@
       else if (parts[0] === "watchlist") out = await viewWatchlist(m);
       else if (parts[0] === "about") out = viewAbout(m);
       else if (parts[0] === "roadmap") out = await viewRoadmap();
+      else if (parts[0] === "search") out = await viewSearch(m, params);
       else {
         const F = await loadFest(parts[0]);
         if (!F) out = { html: `<p>${t("notFound")}</p>` };
@@ -239,7 +252,7 @@
 
   // ---------- views ----------
   const PLANNED = [
-    ["Venice Film Festival", "labiennale.org"], ["Berlin International Film Festival", "berlinale.de"],
+    ["Venice International Film Festival", "labiennale.org"], ["Berlin International Film Festival", "berlinale.de"],
     ["Sundance Film Festival", "festival.sundance.org"], ["Toronto International Film Festival", "tiff.net"],
     ["Locarno Film Festival", "locarnofestival.ch"], ["International Film Festival Rotterdam", "iffr.com"],
   ];
@@ -270,7 +283,7 @@
         </div>
         <p class="muted small" style="margin-top:10px">${t("plannedNote")} <a href="#/roadmap">${t("roadmap")}</a></p>`,
       after() {
-        $("#home-search").onsubmit = (e) => { e.preventDefault(); location.hash = withParams(link(slug, "films"), { q: $("#hq").value.trim() }); };
+        $("#home-search").onsubmit = (e) => { e.preventDefault(); location.hash = withParams("#/search", { q: $("#hq").value.trim() }); };
       },
     };
   }
@@ -446,6 +459,9 @@
             <section class="card ai"><h3>${t("aiAnalysis")} <span class="badge-ai">AI</span></h3>${ai}</section>
           </aside>
         </div>
+        ${f.x && f.x.length ? `<h2>${t("alsoAt")}</h2><div class="chips">${f.x.map(([slug, id, ys]) => {
+          const fe = state.manifest.festivals.find((m) => m.slug === slug);
+          return `<a class="chip award" href="${link(slug, "film", id)}">${esc(term(fe ? fe.name : slug))} · ${ys.map(num).join(", ")}</a>`; }).join("")}</div>` : ""}
         <h2>${t("similar")}</h2>
         ${sims.length ? `<p class="small muted">${t("similarNote")}</p><div class="mini-grid">${sims.map((x) => miniCard(F, x, x.mt ? `<div class="small content-en" style="margin-top:4px">${esc(x.mt)}</div>` : "")).join("")}</div>` : `<p class="muted">${t("noSimilar")}</p>`}`,
     };
@@ -691,6 +707,27 @@
         <div class="grid cols-2">${m.festivals.map((f) => `<section class="card"><h3>${esc(term(f.name))}</h3><p class="muted small">${num(f.start)}–${num(f.end)}</p>
           <a class="btn" href="${link(f.slug, "data")}">${t("data")}</a> <a class="btn" href="${link(f.slug, "quality")}">${t("quality")}</a></section>`).join("")}</div>
         <h2>${t("stillPlanned")}</h2><p><a href="#/roadmap">${t("roadmap")}</a></p>`,
+    };
+  }
+
+  async function viewSearch(m, params) {
+    const q = params.get("q") || "";
+    const fests = await Promise.all(m.festivals.map((f) => loadFest(f.slug)));
+    const groups = fests.filter(Boolean).map((F) => [F, filterFilms(F, { q, sort: "awards" })]);
+    const total = groups.reduce((n, [, l]) => n + l.length, 0);
+    return {
+      title: t("search"),
+      html: `<h1>${t("search")}</h1>
+        <form id="gs" role="search" style="max-width:640px"><label class="sr-only" for="gq">${t("search")}</label>
+        <input id="gq" class="search-big" type="search" value="${esc(q)}" placeholder="${esc(t("searchPlaceholder"))}"></form>
+        <p class="muted" style="margin-top:12px">${t("results", { n: fmt(total) })} · ${t("allFestivals")}</p>
+        ${groups.map(([F, list]) => `<h2>${esc(term(F.meta.name))} <span class="muted small">(${fmt(list.length)})</span></h2>
+          ${list.length ? `<div class="film-list">${list.slice(0, 12).map((f) => filmCard(F, f)).join("")}</div>
+          ${list.length > 12 ? `<p><a class="btn" href="${withParams(link(F.meta.slug, "films"), { q })}">${t("loadMore")} (${fmt(list.length)})</a></p>` : ""}` : `<p class="muted">${t("noResults")}</p>`}`).join("")}`,
+      after() {
+        $("#gs").onsubmit = (e) => { e.preventDefault(); location.hash = withParams("#/search", { q: $("#gq").value.trim() }); };
+        announce(t("results", { n: fmt(total) }));
+      },
     };
   }
 

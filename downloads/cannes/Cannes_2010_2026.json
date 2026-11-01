@@ -50488,7 +50488,7 @@
   {
    "Film ID": "CAN-F8332FBAD",
    "Film Title": "A Conspiracy Man",
-   "Original Title": "Il Barbiere Complottista",
+   "Original Title": "Il Barbiere complottista",
    "Festival Year": 2022,
    "Edition Number": "75",
    "Program / Section": "La Cinef",
@@ -62764,7 +62764,7 @@
   {
    "Film ID": "CAN-F0320D6AE",
    "Film Title": "The Mysterious Gaze of the Flamingo",
-   "Original Title": "La Misteriosa Mirada del Flamenco",
+   "Original Title": "La misteriosa mirada del flamenco",
    "Festival Year": 2025,
    "Edition Number": "78",
    "Program / Section": "Un Certain Regard",
@@ -67445,7 +67445,7 @@
   {
    "Film ID": "CAN-F1274D155",
    "Film Title": "Quelques Mots D’amour",
-   "Original Title": "Quelques Mots D’amour",
+   "Original Title": "Quelques Mots d'Amour",
    "Festival Year": 2026,
    "Edition Number": "79",
    "Program / Section": "Un Certain Regard",
@@ -67467,7 +67467,7 @@
    "Visual Style": "Unknown",
    "Target Audience": "General audiences",
    "Official Festival Source": "https://www.festival-cannes.com/en/f/quelques-mots-d-amour/",
-   "Additional Source": "Unknown",
+   "Additional Source": "https://en.wikipedia.org/wiki/2026_Cannes_Film_Festival",
    "Selection Status": "Officially selected (Un Certain Regard)",
    "Appearance ID": "CAN-F1274D155-2026-4AB6",
    "Director IDs": "CAN-DFC675813",
@@ -68840,7 +68840,7 @@
   {
    "Film ID": "CAN-F2F039BD9",
    "Film Title": "For the Opponents",
-   "Original Title": "Para Los Contrincantes",
+   "Original Title": "Para los contrincantes",
    "Festival Year": 2026,
    "Edition Number": "79",
    "Program / Section": "Short Films Competition",
@@ -69274,7 +69274,7 @@
   {
    "Film ID": "CAN-F2846B01A",
    "Film Title": "Laser-Cat",
-   "Original Title": "Laser-gato",
+   "Original Title": "Laser-Gato",
    "Festival Year": 2026,
    "Edition Number": "79",
    "Program / Section": "La Cinef",
@@ -69737,6 +69737,37 @@
    "Verification Status": "Wikipedia (supplementary) - confirm against official source"
   },
   {
+   "Film ID": "CAN-FD285244D",
+   "Film Title": "Katábasis",
+   "Original Title": "Katábasis",
+   "Festival Year": 2026,
+   "Edition Number": "79",
+   "Program / Section": "Immersive Competition",
+   "Program Category": "VR / Immersive",
+   "Director": "Ugo Arsac",
+   "Country of Production": "France",
+   "Runtime": "Unknown",
+   "Language": "Unknown",
+   "Genre": "Unknown",
+   "Synopsis": "Unknown",
+   "Logline": "Unknown",
+   "IMDb Link": "Unknown",
+   "Award Received": "Award winner in section (see festival awards)",
+   "Main Theme": "Unknown",
+   "Secondary Theme": "Unknown",
+   "Keywords": "Unknown",
+   "Mood": "Unknown",
+   "Tone": "Unknown",
+   "Visual Style": "Unknown",
+   "Target Audience": "Unknown",
+   "Official Festival Source": "Unknown",
+   "Additional Source": "https://en.wikipedia.org/wiki/2026_Cannes_Film_Festival",
+   "Selection Status": "Officially selected (Immersive Competition) - supplementary source; official archive does not list this section",
+   "Appearance ID": "CAN-FD285244D-2026-CBC0",
+   "Director IDs": "CAN-D77081C7E",
+   "Verification Status": "Wikipedia (supplementary) - confirm against official source"
+  },
+  {
    "Film ID": "CAN-F02FFD4B9",
    "Film Title": "Lúcido",
    "Original Title": "Lúcido",
@@ -69889,37 +69920,6 @@
    "Selection Status": "Officially selected (Immersive Competition) - supplementary source; official archive does not list this section",
    "Appearance ID": "CAN-F46544D72-2026-CBC0",
    "Director IDs": "CAN-D48F1EF74",
-   "Verification Status": "Wikipedia (supplementary) - confirm against official source"
-  },
-  {
-   "Film ID": "CAN-F095B19AC",
-   "Film Title": "Unknown",
-   "Original Title": "Unknown",
-   "Festival Year": 2026,
-   "Edition Number": "79",
-   "Program / Section": "Immersive Competition",
-   "Program Category": "VR / Immersive",
-   "Director": "Ugo Arsac",
-   "Country of Production": "France",
-   "Runtime": "Unknown",
-   "Language": "Unknown",
-   "Genre": "Unknown",
-   "Synopsis": "Unknown",
-   "Logline": "Unknown",
-   "IMDb Link": "Unknown",
-   "Award Received": "Award winner in section (see festival awards)",
-   "Main Theme": "Unknown",
-   "Secondary Theme": "Unknown",
-   "Keywords": "Unknown",
-   "Mood": "Unknown",
-   "Tone": "Unknown",
-   "Visual Style": "Unknown",
-   "Target Audience": "Unknown",
-   "Official Festival Source": "Unknown",
-   "Additional Source": "https://en.wikipedia.org/wiki/2026_Cannes_Film_Festival",
-   "Selection Status": "Officially selected (Immersive Competition) - supplementary source; official archive does not list this section",
-   "Appearance ID": "CAN-F095B19AC-2026-CBC0",
-   "Director IDs": "CAN-D77081C7E",
    "Verification Status": "Wikipedia (supplementary) - confirm against official source"
   },
   {
@@ -99163,7 +99163,7 @@
    "Previous Participation Years": "Unknown",
    "Previous Awards in This Festival": "Unknown",
    "Source": "Derived from this database (festival film records)",
-   "Films in Database": "Unknown (2026, Immersive Competition)",
+   "Films in Database": "Katábasis (2026, Immersive Competition)",
    "Appearance Years in Database": "2026"
   },
   {
@@ -115181,6 +115181,11 @@
    "Director ID": "CAN-DE338E488"
   },
   {
+   "Appearance ID": "CAN-FD285244D-2026-CBC0",
+   "Film ID": "CAN-FD285244D",
+   "Director ID": "CAN-D77081C7E"
+  },
+  {
    "Appearance ID": "CAN-F02FFD4B9-2026-CBC0",
    "Film ID": "CAN-F02FFD4B9",
    "Director ID": "CAN-D76549157"
@@ -115214,11 +115219,6 @@
    "Appearance ID": "CAN-F46544D72-2026-CBC0",
    "Film ID": "CAN-F46544D72",
    "Director ID": "CAN-D48F1EF74"
-  },
-  {
-   "Appearance ID": "CAN-F095B19AC-2026-CBC0",
-   "Film ID": "CAN-F095B19AC",
-   "Director ID": "CAN-D77081C7E"
   },
   {
    "Appearance ID": "CAN-FA9FFFE90-2026-CBC0",
