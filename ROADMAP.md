@@ -8,7 +8,7 @@ How the ranking was made:
 3. Value to users, divided by effort.
 4. Items that need data we do not have yet (posters, trailers, other festivals' research) rank lower.
 
-**Status:** ✅ = implemented in this version (items 1–20). The rest are planned.
+**Status:** ✅ = implemented (items 1–23). The rest are planned.
 
 ## Core
 
@@ -37,11 +37,11 @@ How the ranking was made:
 
 ## Next
 
-| # | Improvement | Why |
-|---|---|---|
-| 21 | Add the next festivals' research (Venice, Berlinale, then Sundance, TIFF, Locarno, Karlovy Vary, Rotterdam) with the same pipeline | Turns the site into a multi-festival atlas |
-| 22 | Cross-festival identity: one film page that links its Cannes, Venice and Berlin appearances | Shows festival circuits |
-| 23 | Cross-festival search and recommendations | "Films like X at any festival" |
+| # | Improvement | Why | Status |
+|---|---|---|---|
+| 21 | Add the next festivals' research (Venice, Berlinale, then Sundance, TIFF, Locarno, Karlovy Vary, Rotterdam) with the same pipeline | Turns the site into a multi-festival atlas | ✅ Venice + Berlinale |
+| 22 | Cross-festival identity: one film page that links its Cannes, Venice and Berlin appearances | Shows festival circuits | ✅ |
+| 23 | Cross-festival search and recommendations | "Films like X at any festival" | ✅ search (cross-festival recommendations: planned) |
 | 24 | Wikidata / IMDb / TMDb IDs per film (verified matches only) | External links and enrichment without guessing |
 | 25 | Persian titles and synopses, from verified Persian sources or clearly marked as translations | Fully Persian browsing |
 | 26 | Pre-rendered static film pages with sitemap.xml and OpenGraph tags | Search engines and link previews |
