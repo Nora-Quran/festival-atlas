@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Festival Atlas | اطلس جشنواره‌ها</title>
+  <meta name="description" content="Official selections of major film festivals 2010–2026 (Cannes and more) with sources, AI theme analysis and recommendations. Persian and English.">
+  <meta property="og:title" content="Festival Atlas | اطلس جشنواره‌ها">
+  <meta property="og:description" content="Browse every official selection, award and director of major film festivals, with sources and film recommendations.">
+  <meta name="theme-color" content="#9a6b12">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%239a6b12'/%3E%3Ctext x='16' y='22' font-size='17' text-anchor='middle' fill='white'%3E%E2%98%85%3C/text%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Vazirmatn:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/style.css">
+  <script>
+    // Apply saved theme/language before first paint.
+    try {
+      var t = localStorage.getItem("theme"); if (t) document.documentElement.dataset.theme = t;
+      var l = localStorage.getItem("lang") || ((navigator.language || "").startsWith("fa") ? "fa" : "en");
+      document.documentElement.lang = l; document.documentElement.dir = l === "fa" ? "rtl" : "ltr";
+    } catch (e) {}
+  </script>
+</head>
+<body>
+  <a class="skip" href="#main" id="skip">Skip to content</a>
+  <header class="top">
+    <div class="top-inner">
+      <a class="brand" href="#/" id="brand"><span class="logo" aria-hidden="true">★</span><span id="brand-name">Festival Atlas</span></a>
+      <button class="btn menu-btn" id="menu-btn" aria-expanded="false" aria-controls="nav">☰</button>
+      <nav class="nav" id="nav" aria-label="Main"></nav>
+      <div class="tools">
+        <button class="btn" id="lang-btn" type="button"></button>
+        <button class="btn" id="theme-btn" type="button" aria-label="Theme">◐</button>
+      </div>
+    </div>
+  </header>
+  <main id="main" tabindex="-1"><div class="spinner">Loading…</div></main>
+  <footer><div class="inner" id="footer"></div></footer>
+  <div class="sr-only" aria-live="polite" id="live"></div>
+  <script src="assets/i18n.js"></script>
+  <script src="assets/app.js"></script>
+</body>
+</html>

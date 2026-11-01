@@ -1,0 +1,19 @@
+{
+ "festivals": [
+  {
+   "slug": "cannes",
+   "name": "Festival de Cannes",
+   "website": "https://www.festival-cannes.com",
+   "start": 2010,
+   "end": 2026,
+   "films": 2222,
+   "appearances": 2247,
+   "directors": 1863,
+   "programs": 149,
+   "awards": 333,
+   "analysed": 2101,
+   "complete": 145,
+   "file": "data/cannes.json"
+  }
+ ]
+}
