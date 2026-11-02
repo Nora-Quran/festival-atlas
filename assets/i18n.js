@@ -234,3 +234,18 @@ Object.assign(window.FA_TERMS, {
   "European Premiere": "اولین نمایش اروپایی", "North American Premiere": "اولین نمایش آمریکای شمالی",
   "Regional Premiere": "اولین نمایش منطقه‌ای", "National Premiere": "اولین نمایش ملی", "Not a premiere": "نمایش نخست نیست",
 });
+Object.assign(window.FA_TERMS, {
+  "San Sebastián International Film Festival": "جشنواره بین‌المللی فیلم سن‌سباستین",
+  "Karlovy Vary International Film Festival": "جشنواره بین‌المللی فیلم کارلووی واری",
+  "Tallinn Black Nights Film Festival": "جشنواره فیلم شب‌های سیاه تالین",
+  "Annecy International Animation Film Festival": "جشنواره بین‌المللی فیلم انیمیشن انسی",
+  "Clermont-Ferrand International Short Film Festival": "جشنواره بین‌المللی فیلم کوتاه کلرمون‌فران",
+  "IDFA – International Documentary Film Festival Amsterdam": "جشنواره بین‌المللی فیلم مستند آمستردام (IDFA)",
+  "Tribeca Festival": "جشنواره ترایبکا",
+  "BFI London Film Festival": "جشنواره فیلم لندن (BFI)",
+  "Official Selection": "بخش رسمی", "New Directors": "کارگردانان جدید", "Horizontes Latinos": "افق‌های لاتین",
+  "Crystal Globe Competition": "مسابقه گوی بلورین", "Official Selection – Competition": "بخش رسمی – مسابقه",
+  "Feature Films": "فیلم‌های بلند", "Short Films": "فیلم‌های کوتاه", "International Competition": "مسابقه بین‌المللی",
+  "National Competition": "مسابقه ملی", "Lab Competition": "مسابقه لب (تجربی)", "Galas": "گالاها",
+  "Official Competition": "مسابقه رسمی", "Documentary Competition": "مسابقه مستند", "First Feature Competition": "مسابقه نخستین فیلم بلند",
+});

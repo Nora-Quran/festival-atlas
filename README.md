@@ -1,6 +1,6 @@
 # Festival Atlas | اطلس جشنواره‌ها
 
-A bilingual (Persian / English) website for the official selections of major film festivals, 2010–2026. It covers Festival de Cannes, the Venice International Film Festival and the Berlinale.
+A bilingual (Persian / English) website for the official selections of major film festivals, 2010–2026. It covers 11 festivals (Cannes, Venice and the Berlinale 2010–2026; San Sebastián, Karlovy Vary, Tallinn Black Nights, Annecy, Clermont-Ferrand, IDFA, Tribeca and BFI London 2017–2026), with more listed in the catalogue.
 
 Each film page has:
 - the official sources and a verification badge;

@@ -24,8 +24,8 @@
   {
    "name": "Tallinn Black Nights Film Festival",
    "website": "https://poff.ee/en/about/tallinn-black-nights-film-festival/",
-   "slug": "",
-   "status": "in_progress",
+   "slug": "tallinn",
+   "status": "published",
    "note": ""
   },
   {
@@ -262,8 +262,8 @@
   {
    "name": "Clermont-Ferrand International Short Film Festival",
    "website": "https://www.clermont-filmfest.org/",
-   "slug": "",
-   "status": "in_progress",
+   "slug": "clermont",
+   "status": "published",
    "note": ""
   },
   {
@@ -584,8 +584,8 @@
   {
    "name": "Annacy animation festival",
    "website": "https://www.annecy.org/",
-   "slug": "",
-   "status": "in_progress",
+   "slug": "annecy",
+   "status": "published",
    "note": ""
   },
   {
@@ -738,22 +738,22 @@
   {
    "name": "Tribeca Festival",
    "website": "",
-   "slug": "",
-   "status": "in_progress",
+   "slug": "tribeca",
+   "status": "published",
    "note": "Website not given in the source list"
   },
   {
    "name": "San Sebastián International Film Festival",
    "website": "https://sansebastianfestival.com",
-   "slug": "",
-   "status": "in_progress",
+   "slug": "sansebastian",
+   "status": "published",
    "note": ""
   },
   {
    "name": "Karlovy Vary International Film Festival",
    "website": "https://kviff.com",
-   "slug": "",
-   "status": "in_progress",
+   "slug": "karlovyvary",
+   "status": "published",
    "note": ""
   },
   {
@@ -766,8 +766,8 @@
   {
    "name": "BFI London Film Festival",
    "website": "https://bfi.org.uk/london-film-festival",
-   "slug": "",
-   "status": "in_progress",
+   "slug": "london",
+   "status": "published",
    "note": ""
   },
   {
@@ -794,8 +794,8 @@
   {
    "name": "IDFA – International Documentary Film Festival Amsterdam",
    "website": "https://idfa.nl",
-   "slug": "",
-   "status": "in_progress",
+   "slug": "idfa",
+   "status": "published",
    "note": ""
   },
   {
