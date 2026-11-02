@@ -249,3 +249,7 @@ Object.assign(window.FA_TERMS, {
   "National Competition": "مسابقه ملی", "Lab Competition": "مسابقه لب (تجربی)", "Galas": "گالاها",
   "Official Competition": "مسابقه رسمی", "Documentary Competition": "مسابقه مستند", "First Feature Competition": "مسابقه نخستین فیلم بلند",
 });
+Object.assign(window.FA_TERMS, {
+  "Visions du Réel": "ویزیون دو رئل (جشنواره مستند نیون)",
+  "DOK Leipzig – International Leipzig Festival for Documentary and Animated Film": "جشنواره بین‌المللی مستند و انیمیشن لایپزیگ (DOK Leipzig)",
+});

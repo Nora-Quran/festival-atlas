@@ -164,6 +164,21 @@
    "analysed": 746,
    "complete": 137,
    "file": "data/london.json"
+  },
+  {
+   "slug": "visionsdureel",
+   "name": "Visions du Réel",
+   "website": "https://www.visionsdureel.ch",
+   "start": 2017,
+   "end": 2026,
+   "films": 1562,
+   "appearances": 1566,
+   "directors": 1385,
+   "programs": 120,
+   "awards": 147,
+   "analysed": 0,
+   "complete": 120,
+   "file": "data/visionsdureel.json"
   }
  ]
 }

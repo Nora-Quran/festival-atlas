@@ -481,7 +481,7 @@
    "website": "https://www.kurzfilmtage.de/de/",
    "slug": "",
    "status": "planned",
-   "note": ""
+   "note": "No complete online film archive (only PDF catalogues); needs a catalogue parser"
   },
   {
    "name": "Show Me Shorts International Film Festival",
@@ -843,15 +843,15 @@
   {
    "name": "Visions du Réel",
    "website": "https://visionsdureel.ch",
-   "slug": "",
-   "status": "planned",
+   "slug": "visionsdureel",
+   "status": "published",
    "note": ""
   },
   {
    "name": "DOK Leipzig",
    "website": "https://dok-leipzig.de",
    "slug": "",
-   "status": "planned",
+   "status": "in_progress",
    "note": ""
   },
   {
