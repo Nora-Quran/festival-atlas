@@ -56,7 +56,7 @@
    "directors": 1598,
    "programs": 208,
    "awards": 177,
-   "analysed": 0,
+   "analysed": 1862,
    "complete": 208,
    "file": "data/sansebastian.json"
   },
@@ -71,7 +71,7 @@
    "directors": 1458,
    "programs": 138,
    "awards": 82,
-   "analysed": 0,
+   "analysed": 1640,
    "complete": 138,
    "file": "data/karlovyvary.json"
   },
@@ -86,7 +86,7 @@
    "directors": 473,
    "programs": 39,
    "awards": 101,
-   "analysed": 0,
+   "analysed": 448,
    "complete": 39,
    "file": "data/tallinn.json"
   },
@@ -101,7 +101,7 @@
    "directors": 2500,
    "programs": 97,
    "awards": 196,
-   "analysed": 0,
+   "analysed": 2305,
    "complete": 97,
    "file": "data/annecy.json"
   },
@@ -116,7 +116,7 @@
    "directors": 3432,
    "programs": 198,
    "awards": 206,
-   "analysed": 0,
+   "analysed": 3127,
    "complete": 198,
    "file": "data/clermont.json"
   },
@@ -131,7 +131,7 @@
    "directors": 2444,
    "programs": 187,
    "awards": 140,
-   "analysed": 0,
+   "analysed": 2445,
    "complete": 187,
    "file": "data/idfa.json"
   },
@@ -146,7 +146,7 @@
    "directors": 2338,
    "programs": 161,
    "awards": 230,
-   "analysed": 0,
+   "analysed": 2357,
    "complete": 161,
    "file": "data/tribeca.json"
   },
@@ -161,7 +161,7 @@
    "directors": 1639,
    "programs": 137,
    "awards": 59,
-   "analysed": 0,
+   "analysed": 746,
    "complete": 137,
    "file": "data/london.json"
   }
