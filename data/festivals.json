@@ -179,6 +179,21 @@
    "analysed": 0,
    "complete": 120,
    "file": "data/visionsdureel.json"
+  },
+  {
+   "slug": "dokleipzig",
+   "name": "DOK Leipzig – International Leipzig Festival for Documentary and Animated Film",
+   "website": "https://www.dok-leipzig.de",
+   "start": 2017,
+   "end": 2026,
+   "films": 1342,
+   "appearances": 1364,
+   "directors": 1378,
+   "programs": 137,
+   "awards": 111,
+   "analysed": 0,
+   "complete": 137,
+   "file": "data/dokleipzig.json"
   }
  ]
 }
