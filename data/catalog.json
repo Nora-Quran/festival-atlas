@@ -22,6 +22,34 @@
    "note": "Added (not in the source list); years 2010-2026"
   },
   {
+   "name": "Locarno Film Festival",
+   "website": "https://www.locarnofestival.ch",
+   "slug": "",
+   "status": "planned",
+   "note": "Added (requested next). Official site blocks automated access (bot challenge, checked 2026-11-02); needs the official archive via a browser session or an official data export"
+  },
+  {
+   "name": "International Film Festival Rotterdam",
+   "website": "https://iffr.com",
+   "slug": "",
+   "status": "planned",
+   "note": "Added (requested next). Official site blocks automated access (bot challenge, checked 2026-11-02); needs the official archive via a browser session or an official data export"
+  },
+  {
+   "name": "Toronto International Film Festival",
+   "website": "https://www.tiff.net",
+   "slug": "",
+   "status": "planned",
+   "note": "Added (requested next). Official site blocks automated access (bot challenge, checked 2026-11-02); needs the official archive via a browser session or an official data export"
+  },
+  {
+   "name": "Sundance Film Festival",
+   "website": "https://festival.sundance.org",
+   "slug": "",
+   "status": "planned",
+   "note": "Added (requested next). Official site blocks automated access (bot challenge, checked 2026-11-02); needs the official archive via a browser session or an official data export"
+  },
+  {
    "name": "Tallinn Black Nights Film Festival",
    "website": "https://poff.ee/en/about/tallinn-black-nights-film-festival/",
    "slug": "tallinn",
