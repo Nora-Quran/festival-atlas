@@ -560,6 +560,8 @@
             <dt>${t("source")}</dt><dd>${p.src && p.src !== "Unknown" ? `<a href="${esc(p.src)}" target="_blank" rel="noopener" class="ltr">${esc(p.src.replace(/^https?:\/\//, ""))}</a>` : t("unknown")}</dd>
             ${p.notes ? `<dt>${t("notes")}</dt><dd>${en(p.notes)}</dd>` : ""}
           </dl>
+          ${p.desc ? `<section class="card" style="margin-bottom:16px"><h3>${t("aboutSection")}</h3>${en(p.desc, "p")}
+            ${p.descSrc ? `<p class="small muted" style="margin-bottom:0">${t("source")}: ${p.descSrc.startsWith("http") ? `<a class="ltr" href="${esc(p.descSrc)}" target="_blank" rel="noopener">${esc(p.descSrc.replace(/^https?:\/\//, ""))}</a>` : esc(p.descSrc)}</p>` : ""}</section>` : ""}
           <div class="results-bar"><strong>${t("results", { n: fmt(films.length) })}</strong><button class="btn" id="csv">⬇ ${t("exportCsv")}</button></div>
           <div class="film-list">${films.map((f) => filmCard(F, f, f.ap.filter((a) => a.y === year && a.p === prog))).join("")}</div>`,
         after() { $("#csv").onclick = () => filmsCsv(F, films, `${s}_${y}_${prog.replace(/\W+/g, "_")}.csv`); },
@@ -577,6 +579,7 @@
         <h2>${t("programsThisYear")}</h2>
         <div class="grid cols-3">${progs.map((p) => `<a class="card" href="${link(s, "year", y, p.name)}" style="color:inherit;text-decoration:none">
           <h3>${esc(term(p.name))}</h3><div class="small muted">${esc(term(p.cat))}</div>
+          ${p.desc ? `<p class="small content-en" lang="en" dir="ltr" style="margin:6px 0 0;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden">${esc(p.desc)}</p>` : ""}
           <div class="chips" style="margin-top:8px"><span class="chip">${num(p.ext)} ${t("films")}</span>${statusChip(p.status)}</div></a>`).join("")}</div>
         <h2>${t("winners")}</h2>
         ${winners.length ? `<div class="table-wrap"><table><thead><tr><th>${t("award")}</th><th>${t("film")}</th><th>${t("directedBy")}</th></tr></thead><tbody>

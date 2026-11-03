@@ -68,7 +68,7 @@
    "website": "https://tamperefilmfestival.fi/",
    "slug": "",
    "status": "planned",
-   "note": ""
+   "note": "No per-year HTML film list for 2017-2025 (only PDF catalogues)"
   },
   {
    "name": "New York Shorts International Film Festival",
@@ -82,7 +82,7 @@
    "website": "https://sitgesfilmfestival.com/",
    "slug": "",
    "status": "planned",
-   "note": ""
+   "note": "Official film API lacks sections/directors for 2017-2021"
   },
   {
    "name": "Cairo International Film Festival",
@@ -208,7 +208,7 @@
    "website": "https://wff.pl/",
    "slug": "",
    "status": "planned",
-   "note": ""
+   "note": "Only the current edition is public; past film lists not listed"
   },
   {
    "name": "Tirana International Film Festival",
@@ -222,7 +222,7 @@
    "website": "https://www.chicagofilmfestival.com/",
    "slug": "",
    "status": "planned",
-   "note": ""
+   "note": "Site blocked by a bot check (Cloudflare); to do from the user's computer"
   },
   {
    "name": "AFI FEST",
@@ -346,8 +346,8 @@
   {
    "name": "Kurzfilm Festival Hamburg",
    "website": "https://festival.shortfilm.com/en",
-   "slug": "",
-   "status": "planned",
+   "slug": "hamburgshorts",
+   "status": "published",
    "note": ""
   },
   {
@@ -388,8 +388,8 @@
   {
    "name": "THE NORWEGIAN SHORT FILM FESTIVAL",
    "website": "https://kortfilmfestivalen.no/",
-   "slug": "",
-   "status": "planned",
+   "slug": "grimstad",
+   "status": "published",
    "note": ""
   },
   {
@@ -472,8 +472,8 @@
   {
    "name": "Torino Film Festival",
    "website": "https://www.torinofilmfest.org/",
-   "slug": "",
-   "status": "planned",
+   "slug": "torino",
+   "status": "published",
    "note": ""
   },
   {
@@ -516,7 +516,7 @@
    "website": "https://sffilm.org/",
    "slug": "",
    "status": "planned",
-   "note": ""
+   "note": "Site blocked by a bot check (Cloudflare); to do from the user's computer"
   },
   {
    "name": "Florida Film Festival",
@@ -565,7 +565,7 @@
    "website": "https://www.fiff.ch/",
    "slug": "",
    "status": "planned",
-   "note": ""
+   "note": "Site blocked by a bot check (Cloudflare); to do from the user's computer"
   },
   {
    "name": "International Short Film Week Regensburg",
@@ -577,8 +577,8 @@
   {
    "name": "IndieLisboa International Film Festival",
    "website": "https://indielisboa.com/",
-   "slug": "",
-   "status": "planned",
+   "slug": "indielisboa",
+   "status": "published",
    "note": ""
   },
   {
@@ -661,8 +661,8 @@
   {
    "name": "Krakow Film Festival",
    "website": "https://www.krakowfilmfestival.pl/",
-   "slug": "",
-   "status": "planned",
+   "slug": "krakow",
+   "status": "published",
    "note": "URL corrected (row shifted in the source list)"
   },
   {
@@ -731,15 +731,15 @@
   {
    "name": "Animafest Zagreb",
    "website": "",
-   "slug": "",
-   "status": "planned",
+   "slug": "animafest",
+   "status": "published",
    "note": "Website not given in the source list"
   },
   {
    "name": "Fantoche International Animation Film Festival",
    "website": "",
-   "slug": "",
-   "status": "planned",
+   "slug": "fantoche",
+   "status": "published",
    "note": "Website not given in the source list"
   },
   {
@@ -752,8 +752,8 @@
   {
    "name": "Kaboom Animation Festival",
    "website": "",
-   "slug": "",
-   "status": "planned",
+   "slug": "kaboom",
+   "status": "published",
    "note": "Website not given in the source list"
   },
   {
@@ -836,8 +836,8 @@
   {
    "name": "Sheffield DocFest",
    "website": "https://sheffdocfest.com",
-   "slug": "",
-   "status": "planned",
+   "slug": "sheffield",
+   "status": "published",
    "note": ""
   },
   {
@@ -864,15 +864,15 @@
   {
    "name": "FIDMarseille",
    "website": "https://fidmarseille.org",
-   "slug": "",
-   "status": "planned",
+   "slug": "fidmarseille",
+   "status": "published",
    "note": ""
   },
   {
    "name": "Dokufest",
    "website": "https://dokufest.com",
-   "slug": "",
-   "status": "planned",
+   "slug": "dokufest",
+   "status": "published",
    "note": ""
   },
   {

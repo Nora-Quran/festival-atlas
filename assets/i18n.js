@@ -73,7 +73,7 @@ window.I18N = {
     catalogSummary: "{p} published · {i} in progress · {l} planned",
     catalogIntro: "All festivals the project covers or plans to cover. New festivals cover the last 10 years (2017–2026).",
     statusPublished: "Published", statusInProgress: "In progress",
-    premiere: "Premiere", allPremieres: "Any premiere status",
+    premiere: "Premiere", allPremieres: "Any premiere status", aboutSection: "About this section",
   },
   fa: {
     siteName: "اطلس جشنواره‌ها",
@@ -146,7 +146,7 @@ window.I18N = {
     catalogSummary: "{p} منتشرشده · {i} در حال انجام · {l} در برنامه",
     catalogIntro: "همه جشنواره‌هایی که پروژه پوشش می‌دهد یا در برنامه دارد. جشنواره‌های جدید ۱۰ سال اخیر (۲۰۱۷ تا ۲۰۲۶) را پوشش می‌دهند.",
     statusPublished: "منتشرشده", statusInProgress: "در حال انجام",
-    premiere: "اولین نمایش", allPremieres: "هر وضعیت نمایش",
+    premiere: "اولین نمایش", allPremieres: "هر وضعیت نمایش", aboutSection: "درباره‌ی این بخش",
   },
 };
 
@@ -252,4 +252,17 @@ Object.assign(window.FA_TERMS, {
 Object.assign(window.FA_TERMS, {
   "Visions du Réel": "ویزیون دو رئل (جشنواره مستند نیون)",
   "DOK Leipzig – International Leipzig Festival for Documentary and Animated Film": "جشنواره بین‌المللی مستند و انیمیشن لایپزیگ (DOK Leipzig)",
+});
+Object.assign(window.FA_TERMS, {
+  "Torino Film Festival": "جشنواره فیلم تورین",
+  "DokuFest – International Documentary and Short Film Festival": "جشنواره بین‌المللی مستند و فیلم کوتاه دوکوفست (پریزرن)",
+  "FIDMarseille – International Film Festival Marseille": "جشنواره بین‌المللی فیلم مارسی (FIDMarseille)",
+  "Krakow Film Festival": "جشنواره فیلم کراکوف",
+  "Sheffield DocFest": "جشنواره مستند شفیلد",
+  "Animafest Zagreb – World Festival of Animated Film": "جشنواره جهانی فیلم انیمیشن زاگرب (انیمافست)",
+  "Kaboom Animation Festival": "جشنواره انیمیشن کابوم (آمستردام)",
+  "IndieLisboa International Film Festival": "جشنواره بین‌المللی فیلم ایندی‌لیسبوا",
+  "Internationales KurzFilmFestival Hamburg": "جشنواره بین‌المللی فیلم کوتاه هامبورگ",
+  "The Norwegian Short Film Festival": "جشنواره فیلم کوتاه نروژ (گریمستاد)",
+  "Fantoche International Animation Film Festival": "جشنواره بین‌المللی فیلم انیمیشن فانتوش (بادن)",
 });
